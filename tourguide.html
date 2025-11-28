@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paket Tour Guide - Papandayan Tours</title>
+    <title>Paket Tour Guide - Papandayan Tour</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> <!-- Untuk ikon kontak -->
+    <link rel="icon" href="papandayan tour.png">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -78,6 +80,56 @@
         .btn-custom:hover {
             background-color: #e55a2b;
         }
+        .guides {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .guide-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .guide-card:hover {
+            transform: translateY(-5px);
+        }
+        .guide-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .contact-section {
+            padding: 60px 0;
+            background-color: #e9f7ef;
+        }
+        .contact-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-card i {
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 10px;
+        }
+        .contact-card a {
+            text-decoration: none;
+            color: #333;
+        }
+        .contact-card a:hover {
+            color: #ff6b35;
+        }
         footer {
             background-color: #2d5016;
             color: white;
@@ -90,7 +142,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Papandayan Tours</a> <!-- Link ke halaman utama -->
+            <a class="navbar-brand" href="index.html">Papandayan Tour</a> <!-- Link ke halaman utama -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -155,7 +207,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="index.html#contact" class="btn btn-custom mt-3">Pesan Paket Ini</a>
+                            <a href="https://wa.me/62895369666466?text=Halo%20bang%20ted%20ganteng.%2C%20saya%20mau%20tanya-tanya%20mengenai%20layanan%20tour%20guide." class="btn btn-custom mt-3">Booking Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +217,7 @@
                     <div class="package-card">
                         <div class="package-header">
                             <h3>Paket Per Team</h3>
-                            <p>Untuk grup kecil hingga besar yang ingin berpetualang bersama</p>
+                            <p>Untuk grup kecil hingga besar yang ingin berpetualang</p>
                         </div>
                         <div class="package-body">
                             <table class="table table-striped">
@@ -198,7 +250,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="https://wa.me/62895369666466?text=Halo%20bang%20ted%20ganteng.%2C%20saya%20mau%20tanya-tanya%20mengenai%20layanan%20tour%20guide."target="_blank"class="btn btn-custom mt-3">chat via whatsapp</a>
+                            <a href="https://wa.me/62895369666466?text=Halo%20bang%20ted%20ganteng.%2C%20saya%20mau%20tanya-tanya%20mengenai%20layanan%20tour%20guide."target="_blank"class="btn btn-custom mt-3">Booking Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -209,10 +261,88 @@
         </div>
     </section>
 
+    <!-- Guides Section -->
+    <section id="guides" class="guides">
+        <div class="container">
+            <h2 class="text-center mb-5">Tim Tour Guide Kami</h2>
+            <div class="row">
+                <!-- Guide 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="guide-card">
+                        <img src="bang agung.png" alt="Guide 1" class="guide-img">
+                        <h5>Bang Agung</h5>
+                        <p>Pengalaman 8 tahun sebagai guide di Papandayan. Ahli dalam rute aman dan cerita sejarah gunung. Pecinta alam sejati.</p>
+                    </div>
+                </div>
+                <!-- Guide 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="guide-card">
+                        <img src="profil.jpg" alt="Guide 2" class="guide-img">
+                        <h5>Bang Tedi</h5>
+                        <p>Guide berpengalaman 6 tahun, fokus pada keselamatan dan edukasi flora-fauna. Sering memandu grup keluarga.</p>
+                    </div>
+                </div>
+                <!-- Guide 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="guide-card">
+                        <img src="profil.jpg" alt="Guide 3" class="guide-img">
+                        <h5>Tedi Firdaus</h5>
+                        <p>Guide pertama kami, 5 tahun pengalaman. Spesialis fotografi alam dan panduan untuk pendaki wanita.</p>
+                    </div>
+                </div>
+                <!-- Guide 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="guide-card">
+                        <img src="bang agung.png" alt="Guide 4" class="guide-img">
+                        <h5>Tedi Ganteng</h5>
+                        <p>Pengalaman 7 tahun, ahli navigasi dan survival. Sering memandu ekspedisi malam dan camping.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Kontak Kami</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="contact-card">
+                        <i class="bi bi-envelope"></i>
+                        <h5>Email</h5>
+                        <a href="mailto:info@papandayantours.com">@papandayantours.com</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="contact-card">
+                        <i class="bi bi-whatsapp"></i>
+                        <h5>WhatsApp</h5>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Papandayan%20Tours%2C%20saya%20mau%20tanya%20tentang%20paket%20tour%20guide." target="_blank">+62 812-3456-7890</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="contact-card">
+                        <i class="bi bi-instagram"></i>
+                        <h5>Instagram</h5>
+                        <a href="https://www.instagram.com/papandayantours" target="_blank">@papandayantours</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="contact-card">
+                        <i class="bi bi-facebook"></i>
+                        <h5>Facebook</h5>
+                        <a href="https://www.facebook.com/papandayantours" target="_blank">Papandayan Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Papandayan Tours. Semua hak dilindungi. Dibuat dengan cinta untuk alam.</p>
+            <p>&copy; 2023 Papandayan Tour. Semua hak dilindungi. Dibuat dengan cinta untuk alam.</p>
         </div>
     </footer>
 
